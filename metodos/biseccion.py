@@ -1,7 +1,7 @@
 import numpy as np
 from typing import Callable, List, Dict
 
-def biseccion(f, a, b, tol=1e-6, max_iter=100):
+def biseccion(f: Callable, a: float, b: float, tol: float = 1e-6, max_iter: int = 100):
     iterations = []
     fa = f(a)
     fb = f(b)
