@@ -1,4 +1,5 @@
 import numpy as np
+from typing import Callable, List, Dict
 
 def biseccion(f, a, b, tol=1e-6, max_iter=100):
     iterations = []
