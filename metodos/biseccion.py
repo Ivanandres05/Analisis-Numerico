@@ -7,6 +7,7 @@ def biseccion(f: Callable, a: float, b: float, tol: float = 1e-6, max_iter: int 
     fa = f(a)
     fb = f(b)
     
+    # Validación esencial de Teorema de Bolzano
     if fa * fb > 0:
         raise ValueError("Intervalos que no contienen raíz (f(a) y f(b) deben tener signos opuestos).")
         
