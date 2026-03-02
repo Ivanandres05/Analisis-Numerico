@@ -12,7 +12,7 @@ def biseccion(f: Callable, a: float, b: float, tol: float = 1e-6, max_iter: int 
         
     c = a
     for n in range(1, max_iter + 1):
-        c_prev = c
+        c_prev = c  # Almacena el valor anterior para cálculo de error
         c = (a + b) / 2
         fc = f(c)
         
