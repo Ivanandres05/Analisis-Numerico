@@ -9,6 +9,7 @@ def newton_raphson(f: Callable, df: Callable, x0: float, tol: float=1e-10, max_i
         fxn = f(xn)
         dfxn = df(xn)
         
+        # Evitar discontinuidad matemática
         if dfxn == 0:
             raise ZeroDivisionError("División por cero: la derivada de la función es nula.")
             
