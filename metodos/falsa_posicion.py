@@ -1,4 +1,6 @@
 import numpy as np
+from typing import Callable, List, Dict
+
 
 def falsa_posicion(f, a, b, tol=1e-7, max_iter=100):
     iterations = []
