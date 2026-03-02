@@ -14,7 +14,7 @@ def newton_raphson(f: Callable, df: Callable, x0: float, tol: float=1e-10, max_i
             raise ZeroDivisionError("División por cero: la derivada de la función es nula.")
             
         x_next = xn - fxn / dfxn
-        err_abs = abs(x_next - xn)
+        err_abs = abs(x_next - xn) # Divergencia absoluta
         err_rel = float('inf') if x_next == 0 else (err_abs / abs(x_next)) * 100
         
         iterations.append({
