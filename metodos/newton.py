@@ -1,4 +1,5 @@
 import numpy as np
+from typing import Callable, List, Dict
 
 def newton_raphson(f, df, x0, tol=1e-10, max_iter=100):
     iterations = []
