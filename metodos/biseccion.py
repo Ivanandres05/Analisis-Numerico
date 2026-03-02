@@ -2,6 +2,7 @@ import numpy as np
 from typing import Callable, List, Dict
 
 def biseccion(f: Callable, a: float, b: float, tol: float = 1e-6, max_iter: int = 100):
+    """Algoritmo de búsqueda de raíces por Bisección."""
     iterations = []
     fa = f(a)
     fb = f(b)
