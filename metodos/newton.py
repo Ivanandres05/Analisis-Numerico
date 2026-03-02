@@ -1,7 +1,7 @@
 import numpy as np
 from typing import Callable, List, Dict
 
-def newton_raphson(f, df, x0, tol=1e-10, max_iter=100):
+def newton_raphson(f: Callable, df: Callable, x0: float, tol: float=1e-10, max_iter: int=100):
     iterations = []
     xn = x0
     for n in range(1, max_iter + 1):
